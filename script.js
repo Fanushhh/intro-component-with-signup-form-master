@@ -31,7 +31,7 @@ form.addEventListener('submit', function(e){
             errorFields[i].innerHTML = errors[i];
         }else if(inputs[i].name == 'email' && !validateEmail(inputs[i])){
             imgs[i].style.opacity = 1;
-            errorFields[i].innerHTML = 'Email is not valid';
+            errorFields[i].innerHTML = 'Email provided is not valid';
         }else{
             imgs[i].style.opacity = 0;
             errorFields[i].innerHTML = '';
