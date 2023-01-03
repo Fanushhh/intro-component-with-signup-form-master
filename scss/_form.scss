@@ -1,0 +1,82 @@
+.form__container{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow: 0 7px rgba($neutral-dark-blue, 0.4);
+    input{
+        width:100%;
+        padding:15px;
+        margin-top: 25px;
+        border: 1px solid rgba($neutral-gray-blue, 0.5);
+        border-radius: 5px;
+        
+    }
+    input::placeholder{
+        font-size: 14px;
+        font-weight: $font-bold;
+    }
+    .error-field{
+        color:red;
+        font-style: italic;
+        font-size: 12px;
+    }
+
+    button{
+        width: 100%;
+        background-color:$primary-green;
+        border: none;
+        padding: 15px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-weight: $font-regular;
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 3px rgba($primary-green-dark, 0.7);
+        cursor: pointer;
+        
+    }
+    button:hover{
+        background-color:$primary-green-dark;
+    }
+    p{
+        color:$neutral-gray-blue;
+        font-size: 12px;
+        padding-top: 10px;
+        margin:0 15px;
+        span{
+            color:$primary-red;
+            font-weight: $font-semi-bold;
+            cursor: pointer;
+        }
+    }
+    .input-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        img{
+            position: absolute;
+            right:25px;
+            top:40px;
+            opacity: 0;
+        }
+    }
+
+    @include for-mobile-up{
+        width: 570px;
+        max-width: 600px;
+        padding:40px;
+        input{
+            padding:15px 25px 
+        }
+       
+        
+    }
+
+    
+}
+
+.show{
+    opacity: 1;
+    cursor: pointer;
+}
