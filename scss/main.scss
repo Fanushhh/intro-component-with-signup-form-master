@@ -17,9 +17,19 @@ body{
         background-image: url(../images/bg-intro-desktop.png);
         background-size: cover;
         background-repeat: no-repeat;
-        overflow: hidden;
+        
     }
 }
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:50px auto;
+}
+
 
 .container{
     text-align: center;
