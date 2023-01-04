@@ -166,7 +166,7 @@ footer p a {
 }
 
 .cta__container {
-  padding-top: 50px;
+  padding: 0 20px;
 }
 .cta__container--title {
   font-size: 24px;
