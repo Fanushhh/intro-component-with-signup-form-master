@@ -42,8 +42,6 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    
     @include for-mobile-up{
         max-width: 1200px;
         display: flex;
