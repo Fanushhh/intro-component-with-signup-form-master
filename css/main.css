@@ -230,6 +230,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 100px auto;
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    margin: 0 auto;
+  }
 }
 
 .container {

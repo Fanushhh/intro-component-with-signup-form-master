@@ -27,7 +27,10 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
+    margin:100px auto;
+    @include for-mobile-up{
+        margin: 0 auto;
+    }
 }
 
 
