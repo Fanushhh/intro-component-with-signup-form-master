@@ -5,12 +5,6 @@ const inputs = form.querySelectorAll('input');
 const errorFields = form.querySelectorAll('.error-field');
 const email = form.querySelector('input[name=email]');
 
-// submitButton.addEventListener('click', function(e){
-//     e.preventDefault();
-
-//     console.log(e.target.value);
-    
-// })
 const errors = ["First name cannot be empty", "Last Name cannot be empty", "Email Address cannot be empty", "Password cannot be empty"]
 
 function validateEmail(input) {
@@ -31,14 +25,12 @@ form.addEventListener('submit', function(e){
             errorFields[i].innerHTML = errors[i];
         }else if(inputs[i].name == 'email' && !validateEmail(inputs[i])){
             imgs[i].style.opacity = 1;
-            errorFields[i].innerHTML = 'Email provided is not valid';
+            errorFields[i].innerHTML = "Looks like this is not an email";
         }else{
             imgs[i].style.opacity = 0;
             errorFields[i].innerHTML = '';
         }
         
     }
-    
-    
 })
 
