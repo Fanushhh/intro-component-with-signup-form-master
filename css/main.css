@@ -230,7 +230,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 50px auto;
+  margin: 75px auto;
 }
 
 .container {
@@ -241,7 +241,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 50px auto;
 }
 @media (min-width: 1200px) {
   .container {
